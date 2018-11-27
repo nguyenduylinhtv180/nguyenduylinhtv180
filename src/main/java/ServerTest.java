@@ -92,7 +92,7 @@ public class ServerTest {
         for (int i = 0; i < database.size(); i++) {
             if (database.get(i).getId().compareTo(id)==0) {
                 database.remove(i);
-                return Response.ok("Deleted Note at Id " + id).build();
+                return Response.ok("Deleted info at Id " + id).build();
             }
         }
         return Response.status(Response.Status.NOT_FOUND).entity("Not found for ID: " + id).build();
