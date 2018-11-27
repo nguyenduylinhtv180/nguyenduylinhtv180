@@ -10,7 +10,7 @@ public class Information {
     private long lastupdated_date;
     private String lastupdated_by;
 
-    // Constructor mặc định này là bắt buộc nếu có thêm cấu tử khác.
+    
     public Information() {
 
     }
