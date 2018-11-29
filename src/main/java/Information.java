@@ -10,7 +10,7 @@ public class Information {
     private long lastupdated_date;
     private String lastupdated_by;
 
-    
+
     public Information() {
 
     }
