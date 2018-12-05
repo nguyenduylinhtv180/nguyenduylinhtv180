@@ -20,8 +20,8 @@ public class ServerTest {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public Response forFun() {
-        return Response.ok("Hello there !!!", MediaType.TEXT_PLAIN).build();
+    public Response Hello() {
+        return Response.ok("Hello, this is my app.....", MediaType.TEXT_PLAIN).build();
     }
 
     @GET
