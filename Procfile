@@ -1,0 +1,1 @@
+web: java -jar target/linhnd4-jar-with-dependencies.jar
