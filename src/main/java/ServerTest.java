@@ -11,17 +11,21 @@ import com.google.gson.JsonParseException;
  *
  * @author duylinh
  */
-@Path("/information")
+@Path("/")
 public class ServerTest {
 
 
     static List<Information> database = new ArrayList<Information>();
 
 
-
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response forFun() {
+        return Response.ok("Hello there !!!", MediaType.TEXT_PLAIN).build();
+    }
 
     @GET
-    @Path("/{id}")
+    @Path("/information/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getInfo(@PathParam("id") String id) {
         System.out.println("get Id"+id);
@@ -37,6 +41,7 @@ public class ServerTest {
     }
 
     @POST
+    @Path("/information")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response createInfo(String info) {
@@ -56,7 +61,7 @@ public class ServerTest {
 
 
     @PUT
-    @Path("/{id}")
+    @Path("/information/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateInfo(@PathParam("id") String id, String info) {
@@ -82,7 +87,7 @@ public class ServerTest {
     }
 
     @DELETE
-    @Path("/{id}")
+    @Path("/information/{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response deleteInfo(@PathParam("id") String id) {
         System.out.println("delete Id"+id);
