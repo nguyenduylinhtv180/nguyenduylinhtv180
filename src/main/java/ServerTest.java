@@ -23,7 +23,12 @@ public class ServerTest {
     public Response Hello() {
         return Response.ok("Hello, this is my app.....", MediaType.TEXT_PLAIN).build();
     }
-
+    @GET
+    @Path("/note")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getInformationList() {
+        return Response.ok(new Gson().toJson(database), MediaType.APPLICATION_JSON).build();
+    }
     @GET
     @Path("/information/{id}")
     @Produces(MediaType.APPLICATION_JSON)
