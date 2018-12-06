@@ -36,15 +36,15 @@
 
 *Edit Note by Id
 
-    PUT method to /note/:id
+    PUT method to /note/{id}
 
     {
-      "content" : "Note content",
+      "content" : "information content",
       "lastupdated_by" : "username"
     }
 *Delete Note By Id
 
-    DELETE method to /note/:id
+    DELETE method to /note/{id}
 
 ##3) Test with Hey
 

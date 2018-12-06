@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ead042f-e8d2-46e3-b798-e5ec89a8d0e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="4ead042f-e8d2-46e3-b798-e5ec89a8d0e1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,14 +108,14 @@
         <counts>
           <entry key="Procfile" value="33" />
           <entry key="java" value="302" />
-          <entry key="md" value="287" />
+          <entry key="md" value="300" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="302" />
-          <entry key="Markdown" value="287" />
+          <entry key="Markdown" value="300" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="XML" value="13" />
         </counts>
@@ -151,8 +149,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+              <first_editor relative-caret-position="-341">
+                <caret line="49" selection-start-line="49" selection-end-line="49" />
               </first_editor>
               <second_editor />
             </state>
@@ -332,7 +330,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544067718369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544067935148" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -421,7 +419,7 @@
       <workItem from="1543305474559" duration="320000" />
       <workItem from="1543306320400" duration="2793000" />
       <workItem from="1543998301120" duration="10282000" />
-      <workItem from="1544062057271" duration="5204000" />
+      <workItem from="1544062057271" duration="5546000" />
     </task>
     <task id="LOCAL-00001" summary="linh">
       <created>1543307648120</created>
@@ -464,7 +462,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38601000" />
+    <option name="totallyTimeSpent" value="38943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +475,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="974" y="24" width="1102" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24526516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -626,8 +623,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <first_editor relative-caret-position="-341">
+            <caret line="49" selection-start-line="49" selection-end-line="49" />
           </first_editor>
           <second_editor />
         </state>
