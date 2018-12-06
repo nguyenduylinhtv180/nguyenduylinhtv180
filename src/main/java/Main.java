@@ -17,16 +17,16 @@ public class Main {
         context.setContextPath("/");
         final EnumSet<DispatcherType> REQUEST_SCOPE = EnumSet.of(DispatcherType.REQUEST);
 
-
+        context.addFilter( RequestLoggingFilter.class, "/*", REQUEST_SCOPE );
 
         FilterHolder filterHolder = new FilterHolder( DoSFilter.class );
-            filterHolder.setInitParameter("maxRequestsPerSec", "1");  // max requests per second per client
-            filterHolder.setInitParameter("delayMs", "-1");           // millisec to delay excess requests. -1 means reject (for testing)
-            filterHolder.setInitParameter("remotePort", "false");     // true = track connections by remote ip+port
-            filterHolder.setInitParameter("enabled", "true");
-            filterHolder.setInitParameter("trackSessions", "true");
-        context.addFilter( filterHolder, "/*", REQUEST_SCOPE );
-        context.addFilter( RequestLoggingFilter.class, "/*", REQUEST_SCOPE );
+               filterHolder.setInitParameter("maxRequestsPerSec", "1");  // max requests per second per client
+             filterHolder.setInitParameter("delayMs", "-1");           // millisec to delay excess requests. -1 means reject (for testing)
+              filterHolder.setInitParameter("remotePort", "false");     // true = track connections by remote ip+port
+             filterHolder.setInitParameter("enabled", "true");
+              filterHolder.setInitParameter("trackSessions", "true");
+              context.addFilter( filterHolder, "/*", REQUEST_SCOPE );
+
         String port = System.getenv("PORT") != null ? System.getenv("PORT") : "8080";
 
         Server jettyServer = new Server(Integer.parseInt(port));
