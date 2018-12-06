@@ -24,7 +24,7 @@ public class ServerTest {
         return Response.ok("Hello, this is my app.....", MediaType.TEXT_PLAIN).build();
     }
     @GET
-    @Path("/note")
+    @Path("/information")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getInformationList() {
         return Response.ok(new Gson().toJson(database), MediaType.APPLICATION_JSON).build();
