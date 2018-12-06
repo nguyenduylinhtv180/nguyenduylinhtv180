@@ -47,50 +47,53 @@
     DELETE method to /note/:id
 
 ##3) Test with Hey
+    hey -n 100 -c 5 -q 1 -m POST -d '{"conten":"this a","created_by":"linh"}' -H "Content-Type:Application/json" https://linhnd4jerseyjetty.herokuapp.com/information
+
 Summary:
-      Total:	30.4362 secs
-      Slowest:	1.2806 secs
-      Fastest:	0.2483 secs
-      Average:	0.3222 secs
-      Requests/sec:	9.8567
+   
+      Total:	20.2705 secs
+      Slowest:	1.7911 secs
+      Fastest:	0.2384 secs
+      Average:	0.3336 secs
+      Requests/sec:	4.9333
       
-      Total data:	63238 bytes
-      Size/request:	210 bytes
+      Total data:	21200 bytes
+      Size/request:	212 bytes
 
 Response time histogram:
-     
-      0.248 [1]	|      
-      0.352 [265]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-      0.455 [24]	|■■■■
-      0.558 [0]	|
-      0.661 [0]	|
-      0.764 [0]	|
-      0.868 [0]	|
-      0.971 [0]	|
-      1.074 [0]	|
-      1.177 [4]	|■
-      1.281 [6]	|■
+   
+      0.238 [1]	|
+      0.394 [94]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+      0.549 [0]	|
+      0.704 [0]	|
+      0.859 [0]	|
+      1.015 [0]	|
+      1.170 [0]	|
+      1.325 [0]	|
+      1.481 [0]	|
+      1.636 [0]	|
+      1.791 [5]	|■■
 
 
 Latency distribution:
-    
-      10% in 0.2572 secs
-      25% in 0.2681 secs
-      50% in 0.2859 secs
-      75% in 0.3081 secs
-      90% in 0.3670 secs
-      95% in 0.4128 secs
-      99% in 1.2081 secs
+   
+      10% in 0.2439 secs
+      25% in 0.2487 secs
+      50% in 0.2569 secs
+      75% in 0.2698 secs
+      90% in 0.2859 secs
+      95% in 1.7064 secs
+      99% in 1.7911 secs
 
 Details (average, fastest, slowest):
-     
-      DNS+dialup:	0.0289 secs, 0.2483 secs, 1.2806 secs
-      DNS-lookup:	0.0032 secs, 0.0000 secs, 0.0963 secs
-      req write:	0.0000 secs, 0.0000 secs, 0.0002 secs
-      resp wait:	0.2931 secs, 0.2482 secs, 0.4356 secs
-      resp read:	0.0001 secs, 0.0001 secs, 0.0001 secs
+   
+      DNS+dialup:	0.0739 secs, 0.2384 secs, 1.7911 secs
+      DNS-lookup:	0.0361 secs, 0.0000 secs, 0.7219 secs
+      req write:	0.0000 secs, 0.0000 secs, 0.0001 secs
+      resp wait:	0.2595 secs, 0.2382 secs, 0.3378 secs
+      resp read:	0.0001 secs, 0.0000 secs, 0.0002 secs
 
 Status code distribution:
-      
-      [200]	151 responses
-      [429]	149 responses
+    
+      [200]	50 responses
+      [429]	50 responses
